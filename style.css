@@ -11,18 +11,24 @@ a {
 }
 
 .header {
-  top: 0px;
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
+  text-align: center;
   padding: 20px 30px;
   background-color: #f3e1d7;
+}
+
+@media screen and (min-width: 500px) {
+  .header {
+    text-align: left;
+    align-items: baseline;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .link svg {
   color: #9b6e1e;
   height: 25px;
-  margin: 20px 20px 20px 20px;
+  margin: 15px 15px 1px 20px;
   align-items: baseline;
 }
 
@@ -41,7 +47,7 @@ a {
 }
 
 .bio {
-  max-width: 600px;
+  max-width: 850px;
   margin: 50px auto 100px auto;
 }
 
@@ -52,8 +58,30 @@ a {
 }
 .bio p {
   margin-bottom: 10px;
-  padding-left: 100px;
-  padding-right: 100px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+@media screen and (min-width: 500px) {
+  .bio p {
+    text-align: left;
+
+    align-items: baseline;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.highlight {
+  color: #9b6e1e;
+  font-family: 'DM Serif Display', serif;
+  font-size: 25px;
+}
+@media screen and (min-width: 500px) {
+  .bio .highlight {
+    text-align: left;
+    align-items: baseline;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .projects .title {
