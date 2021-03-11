@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Open+Sans&display=swap');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.4;
+}
+
+.header {
+  position: sticky;
+  top: 0px;
+  background-color: rgb(255, 209, 219);
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 20px 30px;
+}
+
+.title {
+  font-family: 'DM Serif Display', serif;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.bio {
+  max-width: 600px;
+  margin: 20px auto 100px auto;
+}
+
+.bio .title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 40px;
+}
+.bio p {
+  margin-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.projects .title {
+  padding-left: 30px;
+  margin-bottom: 30px;
+  padding-top: 20px;
+  font-size: 40px;
+}
+
+.projects p {
+  margin-bottom: 10px;
+  padding-left: 30px;
+}
+
+.navigation .link {
+  margin-right: 5px;
+}
+
+.projects {
+  background-color: rgb(161, 226, 207);
+}
