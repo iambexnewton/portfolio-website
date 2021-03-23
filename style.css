@@ -73,7 +73,6 @@ a {
   background-color: #75887b;
   padding: 30px auto;
   margin: 30px;
-  border-radius: 10px;
 }
 
 .projects .title {
@@ -82,15 +81,7 @@ a {
 }
 
 .projects p {
-  border-radius: 10px;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 30px;
-  padding-bottom: 30px;
   background-color: #75887b;
-  margin-bottom: 10px;
-  margin-left: 10px;
-  margin-right: 10px;
 }
 @media screen and (min-width: 500px) {
   .projects p {
