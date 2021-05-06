@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>"Ah, Promises, Promises."</title>
+  </head>
+  <body>
+    <h1>Ah, Promises Promises</h1>
+
+    <h2>
+      A round up of my fourth week in a
+      <a href="https://northcoders.com/ ">Northcoders</a> bootcamp.
+    </h2>
+
+   <p>
+   This week felt a lot less intense than the previous weeks, I don’t know if that is because the topics made more sense to me, or that we were using the previous weeks knowledge and building on it further during our lessons. The slow progressive increments were paying off (except github, maybe this week I will master it?) 
+  </p> 
+  <p>
+Note, Monday fell on a Bank Holiday so there was no school.
+</p>
+   <h2>What we covered this week…</h2>
+
+    <p><strong> TUESDAY: Asynchronus code. </strong></p>
+
+<p>
+Javascript is a single threaded programming language, the javascript engine can only process one thing at a time, reading from top to bottom. However, there is magic inside Javascript. Asynchronous javascript code runs from top to bottom also, but when is sees an asynchronous function or piece of code it will take that to one side and perform the asynchronous task and the synchronous code without blocking the code thread from completing.
+</p>
+
+<p>
+To explore this asynchronous javascript we used the node application protocol interface (api) <strong>setTimeout()</strong> function to implement a time delay. When javascript reads this node api <strong>setTimeout()</strong> it processes it separately, through the api event loop and waits for the call stack to become empty before running to completion, thus enabling javascript to run two functions synchronously, without blocking the code.
+</p>
+
+<p><strong> WEDNESDAY: Asynchronus code. </strong></p>
+
+<p>
+Today we explored asynchronous code by writing asynchronous functions. We explored this by using callbacks.
+</p>
+
+<p>
+Where nodes api lacks, callback prospered. nodes api appeared to me like it could become rather messy and difficult to read your code if you were trying to perform multiple functions, as the order they are returned may not be exactly guaranteed. The time that is passed as a parameter in <strong>setTimeout()</strong> is the minimum time for the delay, not the time it will actually take.
+</p>
+
+<p>
+Callbacks are a way to make sure certain code doesn’t execute until other code has finished.
+</p>
+
+<p><strong> THURSDAY: The Internet. </strong></p>
+
+<p>
+How does the internet actually work? How does information move around the internet?
+</p>
+
+<p>
+I found this really interesting. It’s something I use everyday but never really delved into it. Let’s take a brief look…
+</p>
+
+<p>
+You’re scrolling through cat pictures on your phone, how do the pictures get to your phone?
+</p>
+
+<p>
+The picture is hosted on a webserver. Your phone sends a request to the webserver for the image.
+</p>
+
+<p>
+The request is sent in a ‘packet’. Routers will then direct the packet sent by your phone to the web server. The web server then reads the request held in the packet. Images can often be very large so they can be split into many packets, like a jigsaw puzzle.
+</p>
+
+<p>
+Routers then send your Image packets back and put back together, each packet will have instructions on where it belongs, some may take longer than others to arrive back. When all the packets are back, the image will be displayed.
+</p>
+
+<p><strong> FRIDAY: Promises. </strong></p>
+
+<p>
+A promise in javascript is “a proxy for a value not necessarily known when the promise is created.” — MND Web Docs
+</p>
+
+<p>
+A promise is an object that can be returned synchronously from an asynchronous function.
+</p>
+
+<p>
+A promise can only have three states…
+</p>
+<p>
+<strong>Pending:</strong> Hasn’t fulfilled or rejected the promise yet.
+</p>
+<p>
+<strong>Fulfilled:</strong> The action relating to the promises succeeded
+</p>
+<p>
+<strong>Rejected:</strong> The action was rejected.
+</p>
+
+<p><strong> Thoughts on this week </strong></p>
+
+<p>
+This week was less intense, but the content is so vital to the effective running of javascript.
+</p>
+<p>
+The delivery and content of the lectures are becoming more clear for me to interpret at this point. Even though my vocabulary falls short, my understanding is growing.
+
+</p>
+<p>
+If you are reading this blog and have yet to use node api, have a try and see if you can use <strong>setTimeout()</strong>. You can find more reading <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Timeouts_and_intervals">here</a>.
+
+</p>
+
+
+  </body>
+</html>

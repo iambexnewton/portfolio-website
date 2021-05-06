@@ -71,8 +71,6 @@ a {
 
 .projects {
   background-color: #75887b;
-  padding: 30px auto;
-  margin: 30px;
 }
 
 .projects .title {
@@ -92,6 +90,7 @@ a {
     margin-bottom: 10px;
     margin-left: 10px;
     margin-right: 10px;
+
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 30px;
