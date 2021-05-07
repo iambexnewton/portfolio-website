@@ -11,6 +11,10 @@ a {
   font-weight: bold;
 }
 
+.blog-links {
+  padding: 16px 0;
+}
+
 a:hover {
   text-decoration: none;
 }
