@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Open+Sans:wght@400;600&display=swap');
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -7,29 +7,69 @@ body {
 }
 
 a {
+  color: #9b6e1e;
+  font-weight: bold;
+}
+
+a:hover {
   text-decoration: none;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+section {
+  margin-bottom: 40px;
 }
 
 .header {
   text-align: center;
   padding: 20px 30px;
-  background-color: #f3e1d7;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 550px) {
   .header {
     text-align: left;
-    align-items: baseline;
+    align-items: center;
     display: flex;
     justify-content: space-between;
   }
 }
 
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 550px) {
+  .navigation {
+    margin: 0;
+    max-width: none;
+  }
+}
+
+.link {
+  display: flex;
+}
+
+.link:not(:last-of-type) {
+  margin-right: 8px;
+}
+
 .link svg {
   color: #9b6e1e;
   height: 25px;
-  margin: 15px 15px 1px 20px;
+  margin: 15px;
   align-items: baseline;
+}
+
+@media screen and (min-width: 550px) {
+  .link svg {
+    margin: 10px;
+  }
 }
 
 .header .link svg:hover {
@@ -38,28 +78,32 @@ a {
 
 .header .title {
   color: #9b6e1e;
+  font-size: 30px;
+}
+
+@media screen and (min-width: 550px) {
+  .header .title {
+    font-size: 36px;
+  }
 }
 
 .title {
   font-family: 'DM Serif Display', serif;
-  font-size: 40px;
+  font-size: 28px;
   font-weight: bold;
-}
-
-.bio {
-  max-width: 850px;
-  margin: 50px auto 100px auto;
-}
-
-.bio .title {
   text-align: center;
-  margin-bottom: 30px;
-  font-size: 40px;
+  margin-bottom: 24px;
 }
-.bio p {
-  margin-bottom: 10px;
-  margin-left: 10px;
-  margin-right: 10px;
+
+@media screen and (min-width: 550px) {
+  .title {
+    font-size: 32px;
+  }
+}
+
+.main__wrapper {
+  max-width: 850px;
+  margin: 0 auto;
 }
 
 .highlight {
@@ -67,42 +111,4 @@ a {
   font-family: 'DM Serif Display', serif;
   font-size: 20px;
   background: none;
-}
-
-.projects {
-  background-color: #75887b;
-}
-
-.projects .title {
-  font-size: 40px;
-  text-align: center;
-}
-
-.projects p {
-  background-color: #75887b;
-}
-@media screen and (min-width: 500px) {
-  .projects p {
-    text-align: left;
-    align-items: baseline;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
-
-  .navigation .link {
-    margin-right: 5px;
-  }
-
-  .projects {
-    text-align: center;
-    color: #080808;
-  }
 }
