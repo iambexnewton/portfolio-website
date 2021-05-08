@@ -3,7 +3,7 @@
 body {
   font-family: 'Open Sans', sans-serif;
   line-height: 1.4;
-  background-color: #f3e1d7;
+  background-color: #f7eae4;
 }
 
 a {
@@ -11,8 +11,23 @@ a {
   font-weight: bold;
 }
 
-.blog-links {
-  padding: 16px 0;
+.project-wrapper {
+  margin: 16px;
+}
+
+@media screen and (min-width: 550px) {
+  .project-wrapper {
+    display: flex;
+    align-items: center;
+  }
+}
+.myDiv {
+  border: 4px outset rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  flex-direction: row;
+  margin: 16px;
+  width: 33%;
 }
 
 a:hover {
@@ -30,7 +45,7 @@ section {
 .main__wrapper {
   max-width: 850px;
   margin: 0 auto;
-  padding: 0 16px;
+  padding: 30px;
 }
 
 .header {
@@ -63,10 +78,6 @@ section {
 
 .link {
   display: flex;
-}
-
-.link:not(:last-of-type) {
-  margin-right: 8px;
 }
 
 .link svg {
