@@ -11,22 +11,55 @@ a {
   font-weight: bold;
 }
 
-.project-wrapper {
-  margin: 16px;
+/* /////// FLEXBOX /////// */
+
+/* .project-wrapper {
 }
 
 @media screen and (min-width: 550px) {
   .project-wrapper {
     display: flex;
-    align-items: center;
   }
 }
-.myDiv {
+
+.project {
   border: 4px outset rgb(0, 0, 0);
   background-color: rgb(255, 255, 255);
   text-align: center;
-  flex-direction: row;
-  margin: 16px;
+}
+
+.project:not(:last-of-type) {
+  margin-bottom: 16px;
+}
+
+@media screen and (min-width: 550px) {
+  .project {
+    width: 33%;
+  }
+
+  .project:not(:last-of-type) {
+    margin-bottom: 0;
+    margin-right: 16px;
+  }
+} */
+
+/* /////// CSS GRID /////// */
+
+.project {
+  border: 4px outset rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.project-wrapper {
+  display: grid;
+  gap: 16px;
+}
+
+@media screen and (min-width: 550px) {
+  .project-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 a:hover {
